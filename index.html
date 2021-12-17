@@ -5,15 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+    <!-- ==== header section ==== -->
     
+    <header>
+        <nav>
 
-    <h1>tasks</h1>
+            <div class="logo">
+                <a href=""><img src="./images/logo.jpeg" alt="logo image"></a>
+            </div>
+
+            <div id="myLinks" class="myLinks">
+                <a href="">Home</a>
+                <a href="">Servives</a>
+                <a href="">About</a>
+            </div>
+
+            <div class="sidebar" onclick="myFunction()">
+                <a href="javascript:void(0)">☰</a>
+            </div>
+
+        </nav>
+    </header>
 
 
 
+    <script>
 
+        function myFunction() {
+            var showhide = document.getElementById('myLinks');
+            if(showhide.style.display === "block"){
+             showhide.style.display = "none";
+            } else {
+             showhide.style.display = "block";
+            }
+        }
+       
+    </script>
 
 </body>
 </html>
+
+
+
+
+
+
+

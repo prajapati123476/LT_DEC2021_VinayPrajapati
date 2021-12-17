@@ -1,0 +1,97 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* header style */
+
+header {
+    width: 100%;
+    height: 60px;
+    border: 2px red solid;
+    padding: 0 2rem;
+}
+
+
+/* nav style with space between*/
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    /* border: blue 2px solid; */
+}
+
+
+/* fix logo container width and height */
+nav .logo {
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    border: 2px solid rgb(102, 10, 110);
+}
+
+
+/* put image in logo container */
+nav .logo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+nav .myLinks a{
+    padding: 0 2rem;
+    /* border: 2px red solid; */
+}
+
+/* remove underline with anchor tag and set left and right padding */
+nav a {
+    text-decoration: none;
+    /* border: 2px red solid; */
+}
+
+
+/* hide sidebar in desktop view */
+ nav .sidebar{
+    display: none;
+}
+
+
+/* for collapsible navabr use media query */
+
+
+@media (max-width: 700px) { 
+
+    nav {
+        position: relative;
+    }
+    
+    #myLinks{
+        position: absolute;
+        display:none;
+        background-color: aqua;
+        border: 2px red solid;    
+        top: 58px;
+        left: -35px;
+        width: 50%;
+        transition: all 50ms ease;
+    }
+
+    #myLinks a {
+        display: block;
+        z-index: 1;
+        margin-top: 20px;
+    }
+    #myLinks a:hover {
+        background-color: rgba(255, 255, 187, 0.685);
+    }
+
+    /* show sidebar in mobile view */
+    nav .sidebar{
+        display: block;
+    }
+
+}
