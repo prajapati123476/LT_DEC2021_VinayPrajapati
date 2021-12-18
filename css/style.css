@@ -6,13 +6,16 @@
 }
 
 
+/*======= start navbar css =======*/
 /* header style */
 
 header {
     width: 100%;
     height: 60px;
-    border: 2px red solid;
-    padding: 0 2rem;
+    /* border: 2px red solid; */
+    background-color: brown;
+    /* color: black; */
+    padding: 2rem;
 }
 
 
@@ -22,16 +25,18 @@ nav {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+
+    /* background-color: brown; */
     /* border: blue 2px solid; */
 }
-
 
 /* fix logo container width and height */
 nav .logo {
     width: 3em;
     height: 3em;
     border-radius: 50%;
-    border: 2px solid rgb(102, 10, 110);
+
+    border: 2px solid rgb(72, 54, 73);
 }
 
 
@@ -44,7 +49,19 @@ nav .logo img {
 
 nav .myLinks a{
     padding: 0 2rem;
+    color: black;
+    font-weight: 900;
+    font-family: sans-serif;
     /* border: 2px red solid; */
+}
+
+nav .myLinks a:hover {
+    /* background-color: rgba(255, 255, 187, 0.685); */
+    color: rgba(255, 255, 187, 0.685);
+    transition: 0.5s;
+    padding: 0.5rem;
+    box-shadow: 12px 2px 12px 5px rgba(255, 255, 187, 0.685);
+    
 }
 
 /* remove underline with anchor tag and set left and right padding */
@@ -63,7 +80,7 @@ nav a {
 /* for collapsible navabr use media query */
 
 
-@media (max-width: 700px) { 
+@media (max-width: 750px) { 
 
     nav {
         position: relative;
@@ -72,17 +89,20 @@ nav a {
     #myLinks{
         position: absolute;
         display:none;
-        background-color: aqua;
+        background-color:rgba(255, 255, 187, 0.685);
         border: 2px red solid;    
-        top: 58px;
+        top: 3.6rem;
         left: -35px;
-        width: 50%;
-        transition: all 50ms ease;
+        min-width: 70%;
+        text-align: center;
+
+        /* transition: all 50ms ease; */
+    
     }
 
     #myLinks a {
         display: block;
-        z-index: 1;
+        z-index: 2;
         margin-top: 20px;
     }
     #myLinks a:hover {
@@ -95,3 +115,106 @@ nav a {
     }
 
 }
+
+/*======= end navbar css =======*/
+
+/*======= start landing page css =======*/
+
+.landing-page {
+    padding: 5rem;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    /* overflow: hidden; */
+    flex-direction: row-reverse;
+    /* gap: 2rem; */    
+    justify-content: space-around;
+    text-align: center;
+    background-color: brown;
+    /* border: 2px black solid; */
+    /* height: 93.9vh; */
+}
+
+.landing-page .lottie {
+    width: 30%;
+    /* max-height: 25rem; */
+    margin-top: 7rem;
+ 
+    /* border-radius: 300px; */
+    /* border: 2px yellow solid; */
+    /* background-color: ; */
+   
+    box-shadow: 7px 2px 80px 20px  rgba(255, 255, 187, 0.685) ;
+
+}
+
+/* .landing-page lottie-player {
+    z-index: 10;
+    border: black 2px solid;
+} */
+
+.landing-page .info {
+
+    width: 40%;
+    /* padding: 10rem 5rem 0rem 0rem; */
+    /* border-radius: 20px; */
+}
+
+.landing-page .info .heading {
+    font-family: sans-serif;
+    font-size: 4rem;
+}
+
+.landing-page .info .details {
+    font-family:cursive;
+    font-size: 2rem;
+}
+
+@media (max-width:1370px) {
+    .landing-page { 
+        flex-direction: column;
+    }
+    .landing-page .lottie {
+        box-shadow: none;
+    }
+
+    .landing-page .lottie {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        /* border: 2px solid black; */
+        /* margin-left: 15%; */
+        margin-top: -50px;
+        height: 25rem;
+        /* margin-top: -50px; */
+    }
+    .landing-page lottie-player {
+        /* max-width: 50%; */
+        align-content: center;
+        /* border: 2px black solid; */
+    }
+
+    .landing-page .info {
+        width: 100%;
+        /* border: 2px black solid; */
+    }
+    
+}
+
+@media (max-width:780px) {
+
+    .landing-page .info .heading {
+        font-size: 2rem;
+    }
+
+    .landing-page .lottie {
+        box-shadow: none;
+    }
+}
+
+
+/*======= end landing page css =======*/
+
+
+
+/*======= main content page css =======*/
