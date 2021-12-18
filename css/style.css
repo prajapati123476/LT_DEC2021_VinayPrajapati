@@ -390,6 +390,7 @@ span {
 
 .contact {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 
@@ -405,3 +406,10 @@ span {
     background-color: antiquewhite;
 }
 
+.contact .c1 {
+    padding: 2rem;
+}
+
+/* @media(max-width:900px) {
+
+} */
