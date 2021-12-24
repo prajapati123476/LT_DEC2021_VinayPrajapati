@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif !important;
 }
 
 
@@ -293,9 +294,18 @@ span {
     }
 }
 
+
+
+.product {
+    background: linear-gradient(white, brown)   ;
+    background-attachment: fixed;
+    
+}
+
 .phead {
-    min-width: 100;
+    min-width: 100%;
     padding: 1rem;
+
     /* border: 2px rebeccapurple solid; */
 }
 
@@ -341,14 +351,13 @@ span {
     font-size: 1.2rem;
     /* border: 2px rgb(63, 37, 37) solid; */
 }
-.product {
-    background-color: rgb(185, 102, 99);
-}
+
 .product-head {
     text-align: center;
     padding: 2rem;
     font-size: 2rem;
     font-family: sans-serif;
+
 }
 
 @media (max-width:700px) {
