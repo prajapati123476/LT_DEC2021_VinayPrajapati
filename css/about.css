@@ -1,0 +1,65 @@
+
+#about-sec{
+    padding-top: 3rem;
+    background-color: brown;
+   
+
+}
+
+.company, .offer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.company .pic {
+    width: 20%;
+    /* border: 2px black solid; */
+    /* border-radius: 20px; */
+}
+.company .pic img {
+    width: 100%;
+    border-radius: 20px;
+    height: 100%;
+}
+
+.offer h1 {
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 2rem;
+}
+.offer .o1 {
+    width: 25%;
+
+}
+
+.offer button {
+    padding: 0.7rem;
+    border-radius: .3rem;
+    border: none;
+    margin-bottom: 5rem;
+    float: right;
+    text-align: center;
+}
+
+@media(max-width:850px) {
+
+    .comp-details {
+        padding: 1.5rem;
+    }
+
+}
+
+@media(max-width:850px) {
+    .offer {
+        flex-direction: column;
+    }
+    .offer .o1 {
+        width: 80%;
+    }
+}

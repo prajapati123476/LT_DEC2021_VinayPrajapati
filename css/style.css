@@ -47,18 +47,20 @@ nav .logo img {
 
 nav .myLinks a{
     padding: 0 2rem;
-    color: black;
-    font-weight: 900;
+    color: rgb(255, 255, 255);
+    font-weight: 1000;
     font-family: sans-serif;
     /* border: 2px red solid; */
 }
 
 nav .myLinks a:hover {
-    /* background-color: rgba(255, 255, 187, 0.685); */
-    color: rgba(255, 255, 187, 0.685);
+    background-color: rgba(255, 0, 0, 0.685);
+    /* color: rgba(255, 255, 255, 0.685); */
+    border-radius: 0.3rem; 
     transition: 0.5s;
-    padding: 0.5rem;
-    box-shadow: 12px 2px 12px 5px rgba(255, 255, 187, 0.685);
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    /* box-shadow: 12px 2px 12px 5px rgba(255, 255, 187, 0.685); */
     
 }
 
@@ -78,7 +80,7 @@ nav a {
 /* for collapsible navabr use media query */
 
 
-@media (max-width: 750px) { 
+@media (max-width: 900px) { 
 
     nav {
         position: relative;
@@ -90,7 +92,7 @@ nav a {
         background-color: white;
         
         /* background-color:rgba(255, 255, 187, 0.685); */
-        border: 2px black solid;    
+        /* border: 2px black solid;     */
         top: 3.6rem;
         left: -35px;
         min-width: 70%;
@@ -105,6 +107,7 @@ nav a {
         display: block;
         z-index: 2;
         padding: 2rem;
+        color: black;
         /* margin-top: 20px;
         margin-bottom: 20px; */
         /* color: white; */
@@ -120,7 +123,7 @@ nav a {
 
     nav .sidebar a {
         font-size: 2rem;
-        color: black;
+        color: white;
     }
 
 }
@@ -149,13 +152,16 @@ nav a {
     width: 30%;
     z-index: 1;
     margin-top: 7rem;
+    border-radius: 0.8rem;
     /* border: 2px black solid; */
-    box-shadow: 7px 2px 80px 20px  rgba(255, 255, 187, 0.685) ;
+    box-shadow: 5px 5px 25px 2px  rgba(5, 5, 0, 0.685) ;
 
 }
 
 .landing-page .info {
     width: 40%;
+    /* border: 2px black solid; */
+    color: white;
 }
 
 .landing-page .info .heading {
@@ -531,26 +537,32 @@ span {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    /* border: red 2px solid; */
 }
 
 .social .link a {
-    width: 100px;
+    /* width: 100px; */
     padding: 0.5rem;
+    color: aliceblue;
+    font-size: 1.5rem;
     text-decoration: none;
     border-radius: 20px;
     text-align: center;
     margin-top:2rem;
 }
 
-.social .link a i{
-    color: white;
-    font-size: 30px;
-}
-
-.social .link a i:hover {
+.social .link a:hover {
     border-radius: 30px;
     color: blue; 
-    padding: 1rem;
+    transition: 0.5s;
+    background-color: white;
+
+}
+
+
+.social .link a .fa-facebook:hover,.social .link a .fa-twitter:hover, .social .link a .fa-linkedin:hover {
+    border-radius: 30px;
+    color: blue; 
     transition: 0.5s;
     background-color: white;
 }
@@ -558,6 +570,11 @@ span {
 .social .link a .fa-instagram:hover {
   color: red;
   background-color: white;
-  padding: 1rem;
   transition: 0.5s;
 }
+
+.social .link a .fa-github:hover {
+    color: black;
+    background-color: white;
+    transition: 0.5s;
+  }
