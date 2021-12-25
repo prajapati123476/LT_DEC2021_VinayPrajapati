@@ -33,7 +33,6 @@ nav .logo {
     width: 3em;
     height: 3em;
     border-radius: 50%;
-
     /* border: 2px solid rgb(72, 54, 73); */
 }
 
@@ -55,7 +54,6 @@ nav .myLinks a{
 
 nav .myLinks a:hover {
     background-color: rgba(255, 0, 0, 0.685);
-    /* color: rgba(255, 255, 255, 0.685); */
     border-radius: 0.3rem; 
     transition: 0.5s;
     padding-top: 0.5rem;
@@ -90,17 +88,12 @@ nav a {
         position: absolute;
         display:none;
         background-color: white;
-        
-        /* background-color:rgba(255, 255, 187, 0.685); */
-        /* border: 2px black solid;     */
         top: 3.6rem;
         left: -35px;
         min-width: 70%;
         text-align: center;
         z-index: 2;
 
-        /* transition: all 50ms ease; */
-    
     }
 
     #myLinks a {
@@ -108,9 +101,6 @@ nav a {
         z-index: 2;
         padding: 2rem;
         color: black;
-        /* margin-top: 20px;
-        margin-bottom: 20px; */
-        /* color: white; */
     }
     #myLinks a:hover {
         background-color: rgba(255, 255, 187, 0.685);
@@ -140,7 +130,6 @@ nav a {
     flex-wrap: wrap;
     /* overflow: hidden; */
     flex-direction: row-reverse;
-    /* gap: 5rem;     */
     justify-content: space-around;
     text-align: center;
     background-color: brown;
@@ -239,7 +228,7 @@ nav a {
 }
 .main {
     width: 100%;
-    /* height: 50vh; */
+    color: wheat;
     padding: 2rem;
     display: flex;
     flex-wrap: wrap;
@@ -261,6 +250,11 @@ nav a {
 .main .content-1 {
     width: 30%;
     padding: 1rem;
+    
+}
+.main .content-1 p, .main .content-2 p, .main .content-3 p {
+    text-align: justify;
+
     /* border: 2px black dotted; */
 }
 
@@ -553,7 +547,7 @@ span {
 
 .social .link a:hover {
     border-radius: 30px;
-    color: blue; 
+    color: rgba(82, 82, 177, 0.904); 
     transition: 0.5s;
     background-color: white;
 
@@ -562,7 +556,7 @@ span {
 
 .social .link a .fa-facebook:hover,.social .link a .fa-twitter:hover, .social .link a .fa-linkedin:hover {
     border-radius: 30px;
-    color: blue; 
+    color: rgba(0, 0, 255, 0.459); 
     transition: 0.5s;
     background-color: white;
 }
