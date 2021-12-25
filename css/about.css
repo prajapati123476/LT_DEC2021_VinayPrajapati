@@ -62,4 +62,10 @@
     .offer .o1 {
         width: 80%;
     }
+
+    .company .pic {
+        width: 40%;
+        /* border: 2px black solid; */
+        /* border-radius: 20px; */
+    }
 }
